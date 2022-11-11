@@ -235,15 +235,15 @@ header .content .slogan,
 
 /* ----------- MAIN ------------ */
 main {
-    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 .imagem-main{
-    width: 50%;
-    height: 70%;
+    width: 20rem;
+    height: 20rem;
+    margin-block: 18rem;
 }
 
 .imagem-main img{
@@ -252,8 +252,9 @@ main {
 }
 
 main .content{
-    width: 50%;
-    height: 45%;
+    width: 20rem;
+    height: 18rem;
+    margin-left: 3rem;
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
