@@ -1,0 +1,13 @@
+:root{
+    --bg: #043873;
+    --azul: #4F9CF9;
+    --amarelo: #FFE492;
+    --cor-heading: #212529;
+    --cor-texto: white;
+    --cor-texto-secundario: #F7F7EE
+}
+
+html{
+    font-size: 16px;
+
+}
