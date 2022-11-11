@@ -12,6 +12,9 @@
     --font-select: 'DM Sans', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 html{
     font-size: 16px;
@@ -71,7 +74,7 @@ a {
 /* -----------NAVBAR ----------- */
 nav{
     background-color: var(--bg);
-    width: 100vw;
+    width: 100%;
     height: 5.75rem;
     display: flex;
     align-content: center;
@@ -154,20 +157,61 @@ header .content{
 }
 
 header .content .slogan,
-header .content .texto{
+.content .texto{
     color: var(--cor-texto);
     font-family: var(--font-principal);
 
 }
 
-header .content .slogan{
+.content .slogan{
     font-weight: var(--bold-header);
     font-size: 2.8rem;
 }
 
-header .content .texto{
+.content .texto{
     font-weight: var(--bold-texto);
     font-size: 1rem;
     margin-top: -2rem
 }
 
+/* ----------- MAIN ------------ */
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.imagem-main{
+    width: 50%;
+    height: 70%;
+}
+
+.imagem-main img{
+    width: 100%;
+    height: 100%;
+}
+
+main .content{
+    width: 50%;
+    height: 45%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .content .slogan{
+    font-family: var(--font-principal);
+    font-weight: var(--bold-header);
+    color: var(--cor-heading);
+
+}
+
+main .content .texto{
+    line-height: 1.8rem;
+    width: 35rem;
+    color: var(--cor-heading);
+    font-size: .9rem;
+}
