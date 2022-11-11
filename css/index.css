@@ -74,13 +74,41 @@ a {
     html{
         font-size: 14px;
     }
-    main .content{
-        flex-direction: row;
-        flex-wrap: wrap-reverse;
-    }
     nav button{
         display: none;
     }
+    
+    header .content{
+        align-items: center;
+        text-align: center;
+    }
+    header .content .slogan{
+        max-width: 50%;
+        padding-block: 2rem;
+    }
+    header .content .texto{
+        margin-block: 2rem 4rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+    }
+
+    main{
+        height: 200%
+    }
+    main .content{
+        align-items: center;
+        margin-top: 5rem;
+        margin-left: 0!important;
+        width: 100%;
+        text-align: center;
+    }
+    main .content .texto{
+        width: 100%;
+    }
+
 }
 
 /* -----------NAVBAR ----------- */
