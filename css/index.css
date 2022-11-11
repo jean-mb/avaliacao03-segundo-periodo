@@ -74,7 +74,7 @@ a {
     .hamburguer{
         visibility: visible;
         color: white;
-        display: ;
+        margin-block: 20rem;
         font-size: 2rem;
 
     }
@@ -234,17 +234,16 @@ header .content .slogan,
 }
 
 /* ----------- MAIN ------------ */
-
 main {
-    width: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 .imagem-main{
-    width: 20rem;
-    height: 20rem;
-    margin-block: 20rem;
+    width: 50%;
+    height: 70%;
 }
 
 .imagem-main img{
@@ -253,9 +252,8 @@ main {
 }
 
 main .content{
-    margin-left: 3rem;
-    width: 20rem;
-    height: 16rem;
+    width: 50%;
+    height: 45%;
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
@@ -274,6 +272,7 @@ main .content .texto{
     color: var(--cor-heading);
     font-size: .9rem;
 }
+
 
 .marcacao{
     width: 30%;
