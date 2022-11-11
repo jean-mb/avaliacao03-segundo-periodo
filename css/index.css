@@ -4,18 +4,47 @@
     --amarelo: #FFE492;
     --cor-heading: #212529;
     --cor-texto: white;
-    --cor-texto-secundario: #F7F7EE
+    --cor-texto-secundario: #F7F7EE;
     --bold-header: 700;
     --bold-botao: 500;
     --bold-texto: 400;
     --font-principal: 'Inter', sans-serif;
     --font-select: 'DM Sans', sans-serif;
-
 }
 
 
 html{
     font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-principal);
+    font-weight: var(--bold-botao);
+}
+.try i{
+    font-size: 1.5rem;
+    padding-bottom: 3px;
+    padding-left: 10px;
+
+}
+.try{
+    background-color: var(--azul);
+    color: var(--cor-texto);
+}
+
+.login{
+    background-color: var(--amarelo);
+    color: var(--cor-heading);
+    padding-inline: 1.5rem;
+    margin-left: -2rem;
+    padding-block: 1.3rem;
 }
 
 /* ----------- CSS RESET ----------- */
@@ -47,19 +76,98 @@ nav{
     display: flex;
     align-content: center;
     justify-content: space-around;
+    /* position: fixed; */
 }
 
-nav .logo-box{
+.logo-box,
+nav .menu{
     display: inherit;
+    align-items: center;
+    justify-content: space-evenly;
     color: var(--cor-texto);
 }
 
 .logo-box img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-/* TEMP */
-nav div {
-    background-color: red;
+.logo-box p{
+    margin-left: 0.52rem;
+    font-family: var(--font-principal);
+    font-weight: var(--bold-header);
 }
+
+nav .menu{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu .opcoes{
+    width: 60%;
+    display: inherit;
+    justify-content: space-evenly;
+}
+
+.opcoes select{
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: none;
+    margin-left: -1rem;
+}
+
+.opcoes label{
+    font-family: var(--font-select);
+    font-size: 1rem;
+}
+
+.menu .botoes{
+    width: 35%;
+    height: 100%;
+    display: inherit;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botoes button,
+.content button{
+    height: fit-content;
+    width: fit-content;
+}
+
+/* ---------- HEADER --------- */
+header{
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header .content{
+    margin-top: 8rem;
+    height: 50%;
+    width: 80%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header .content .slogan,
+header .content .texto{
+    color: var(--cor-texto);
+    font-family: var(--font-principal);
+
+}
+
+header .content .slogan{
+    font-weight: var(--bold-header);
+    font-size: 2.8rem;
+}
+
+header .content .texto{
+    font-weight: var(--bold-texto);
+    font-size: 1rem;
+    margin-top: -2rem
+}
+
