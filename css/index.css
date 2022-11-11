@@ -74,6 +74,13 @@ a {
     html{
         font-size: 14px;
     }
+    main .content{
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+    nav button{
+        display: none;
+    }
 }
 
 /* -----------NAVBAR ----------- */
