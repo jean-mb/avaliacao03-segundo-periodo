@@ -7,8 +7,16 @@
     --cor-texto-secundario: #F7F7EE
 }
 
+
 html{
     font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -17,3 +25,7 @@ html{
     }
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
