@@ -71,11 +71,23 @@ a {
 /*-----------RESPONSIVIDADE -----------*/
 
 @media screen and (max-width: 768px) {
+    .hamburguer{
+        visibility: visible;
+        color: white;
+        display: ;
+        font-size: 2rem;
+
+    }
     html{
         font-size: 14px;
     }
     nav button{
         display: none;
+    }
+
+    nav .menu{
+        display: none;
+        visibility: hidden;
     }
     
     header .content{
@@ -112,6 +124,12 @@ a {
 }
 
 /* -----------NAVBAR ----------- */
+.hamburguer{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
 nav{
     background-color: var(--bg);
     width: 100%;
@@ -218,15 +236,15 @@ header .content .slogan,
 /* ----------- MAIN ------------ */
 
 main {
-    height: 100vh;
+    width: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 .imagem-main{
-    width: 50%;
-    height: 70%;
+    width: 20rem;
+    height: 20rem;
+    margin-block: 20rem;
 }
 
 .imagem-main img{
@@ -235,8 +253,9 @@ main {
 }
 
 main .content{
-    width: 50%;
-    height: 45%;
+    margin-left: 3rem;
+    width: 20rem;
+    height: 16rem;
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
@@ -254,6 +273,13 @@ main .content .texto{
     width: 35rem;
     color: var(--cor-heading);
     font-size: .9rem;
+}
+
+.marcacao{
+    width: 30%;
+    margin-top: -4rem;
+    margin-left: 8rem;
+    z-index: -1;
 }
 
 /* ----------- FOOTER ------------- */
