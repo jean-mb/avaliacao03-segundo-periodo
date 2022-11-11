@@ -5,6 +5,12 @@
     --cor-heading: #212529;
     --cor-texto: white;
     --cor-texto-secundario: #F7F7EE
+    --bold-header: 700;
+    --bold-botao: 500;
+    --bold-texto: 400;
+    --font-principal: 'Inter', sans-serif;
+    --font-select: 'DM Sans', sans-serif;
+
 }
 
 
@@ -12,6 +18,7 @@ html{
     font-size: 16px;
 }
 
+/* ----------- CSS RESET ----------- */
 *{
     margin: 0;
     padding: 0;
@@ -19,13 +26,40 @@ html{
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*-----------RESPONSIVIDADE -----------*/
+
 @media screen and (max-width: 768px) {
     html{
         font-size: 14px;
     }
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+/* -----------NAVBAR ----------- */
+nav{
+    background-color: var(--bg);
+    width: 100vw;
+    height: 5.75rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+nav .logo-box{
+    display: inherit;
+    color: var(--cor-texto);
+}
+
+.logo-box img{
+    width: 2rem;
+    height: 2rem;
+}
+
+/* TEMP */
+nav div {
+    background-color: red;
 }
